@@ -1,0 +1,58 @@
+@import 'shared/styles/vars';
+
+.CustomizeInput {
+  position: relative;
+  margin-bottom: 0;
+
+  & &__input {
+    box-sizing: border-box;
+    padding: 18px 15px 4px 15px;
+    color: #202023;
+    font-weight: normal;
+    font-size: 15px;
+    font-style: normal;
+    line-height: 24px;
+    border: 1px solid $border-dark;
+    border-radius: 8px;
+
+    &::placeholder {
+      color: $text-secondary;
+    }
+
+    &:hover,
+    &:focus {
+      z-index: 0;
+      border-color: $border-dark;
+      box-shadow: none;
+    }
+    & .ant-input-suffix {
+      margin-top: -10px;
+      font-size: 20px;
+    }
+  }
+
+  &__label {
+    position: absolute;
+    top: 13px;
+    left: 16px;
+    color: $text-secondary;
+    font-weight: normal;
+    font-size: 15px;
+    font-style: normal;
+    transition: 0.2s ease all;
+    pointer-events: none;
+
+    &_float {
+      top: 3px;
+      font-size: 11px !important;
+    }
+  }
+}
+
+.ant-form-item-has-error .CustomizeInput .ant-input {
+  border-color: #ff4d4f;
+
+  &:focus {
+    box-shadow: none;
+  }
+}

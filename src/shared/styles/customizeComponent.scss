@@ -1,0 +1,40 @@
+@import 'vars';
+
+.ant-checkbox-wrapper {
+  & > span {
+    font-size: 15px;
+  }
+
+  .ant-checkbox, .ant-checkbox-inner {
+    width: 18px;
+    height: 18px;
+  }
+
+  .ant-checkbox-checked .ant-checkbox-inner {
+    background-color: $primary;
+    border-color: $primary;
+  }
+
+  .ant-checkbox-checked::after {
+    border: 1px solid $primary;
+  }
+  
+  .ant-checkbox-inner {
+    border-width: 2px;
+
+    &::after {
+      top: 50%;
+      left: 23%;
+      width: 6px;
+      height: 10px;
+    }
+  }
+  
+  .ant-checkbox + span {
+    padding-left: 10px;
+  }
+
+  .ant-checkbox::selection {
+    background: $primary;
+  }
+}

@@ -1,0 +1,1 @@
+export { FilmsDeleteModal } from './FilmsDeleteModal';

@@ -1,0 +1,1 @@
+export { FilmsDataTable } from './FilmsDataTable';

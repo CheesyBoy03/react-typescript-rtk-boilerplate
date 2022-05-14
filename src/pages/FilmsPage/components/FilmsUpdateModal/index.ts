@@ -1,0 +1,1 @@
+export { FilmsUpdateModal } from './FilmsUpdateModal';

@@ -1,0 +1,1 @@
+export { FilmsCreateModal } from './FilmsCreateModal';
